@@ -7,7 +7,7 @@
 		German:"Nächste Runde"
 		Dutch:"Volgende beurt"
 		Spanish:"Siguiente turno"
-        Portuguese:"Proximo turno"
+        	Portuguese:"Proximo turno"
 	}
 	
 	"Working...":{ // Displayed when next turn is being...turned
@@ -17,7 +17,7 @@
 		Romanian:"Lucru..."
 		Dutch:"Verwerken..."
 		Spanish:"Trabajando..."
-        Portuguese:"Trabalhando..."
+        	Portuguese:"Trabalhando..."
 	}
 	
 	"Turn":{ // For main screen at top left, e.g. Turn 234
@@ -247,7 +247,7 @@
 		Romanian:"Nu"
 		Dutch:"Nee"
 		Spanish:"No"
-		Portuguese:"Sim"
+		Portuguese:"Não" //oops
 	}
 	
 
@@ -554,7 +554,7 @@
 		German:"Für [amount] gold kaufen"
 		Dutch:"Voor [amount] gold kopen"
 		Spanish:"Comprar por [amount] de oro"
-		Portuguese:"Comprar por [amount] peças de ouro"
+		Portuguese:"Comprar por [amount] peças de ouro" // had to put 'peças' to say peices as to represent currency but you can remove it if you want to 
 	}
 
 	"Maintenance cost":{
@@ -769,7 +769,7 @@
 	// Notifications
 	// Some notifications have an exclamation mark after them - is the exclamation mark different in other languages?
 	// If so then we need to deal with that as well
-	// I remember that some languages have upside-down question marks before to mark a question
+	// I remember that some languages have upside-down question marks before to mark a question mark //languages that came from latin such as (spanish) have that, we portuguese have a KPGHLION rules isntead
 	
 	"[cityName] has grown!":{
 		Italian:"[cityName] è cresciuta!"
@@ -1038,11 +1038,21 @@
 		Portuguese:"Não é possivel providenciar manutenção para [unitName] - a unidade foi dissolvida!"
 	}
 	
-	"We have found survivors the ruins - population added to [cityName]":{}
-	"We have discovered the lost technology of [techName] in the ruins!":{}
-	"A [unitName] has joined us!":{}
-	"An ancient tribe trains our [unitName] in their ways of combat!":{}
-	"We have found a stash of [amount] gold in the ruins!":{}
+	"We have found survivors the ruins - population added to [cityName]":{
+	Portuguese:"Encontramos sobreviventes nas ruínas - População adicionada a [cityName]
+	}
+	"We have discovered the lost technology of [techName] in the ruins!":{ //hey i found a little somenthing in a older version, basicly it would discover an already-know tech so it would be basicly a waste
+	Portuguese:"Nós descobrimos a tecnologia perdadida de[techName] nas ruínas!"
+	}
+	"A [unitName] has joined us!":{
+	Portuguese:"Um [unitName] se juntou a nós!"
+	}
+	"An ancient tribe trains our [unitName] in their ways of combat!":{
+	Portuguese:"Uma tribo anciã treinou nosso(a) [unitName] em suas formas de combate!"
+	}
+	"We have found a stash of [amount] gold in the ruins!":{
+	Portuguese:"Encontramos um tessouro de [amount] ouro(s) nas ruínas!"
+	}
 
 	
 	// Save and load game
@@ -1186,7 +1196,7 @@
 		German:"Wiese"
 		Dutch:"Grasland"
 		Spanish:"Pradera"
-		Portuguese:"pastagem"
+		Portuguese:"Pastagem"
 	}
 
 	"Plains":{
@@ -1243,7 +1253,9 @@
 		Portuguese:"Morro"
 	}
 	
-	"Mountain":{}
+	"Mountain":{
+	Portuguese:"Montanha"
+	}
 
 	"Forest":{
 		Italian:"Foresta"
@@ -1292,7 +1304,7 @@
 		Italian:"Pianure allagate"
 		Russian:"Пищевые равнины"
 		French:"Plaines inondables"
-		Romanian:"Câmpiile alimentare"
+		Romanian:"Câmpiile alimentare" //needs fix (thank god it is a latin derived language PHEW!)
 		// German translation not sure
 		Dutch:"Riviervlakte"
 		Spanish:"Terreno inundable"
@@ -1300,7 +1312,7 @@
 	}
 	
 	"Impassible":{
-		Portuguese:"Impassevel"
+		Portuguese:"Impassável"
 	}
 	
 	
@@ -1639,7 +1651,7 @@
 		German:"Lager"
 		Dutch:"Kamp"
 		Spanish:"Campamento"
-		Portuguese:"Campo"
+		Portuguese:"Campo de caça"
 	}
 	"Oil well":{
 		Italian:"Pozzo di petrolio"
@@ -1730,8 +1742,12 @@
 		Portuguese:"Drenar pântano"
 	}
 	
-	"Ancient Ruins":{}
-	"City Ruins":{}
+	"Ancient Ruins":{
+	Portuguese:"Ruinas antigas"
+	}
+	"City Ruins":{
+	Portuguese:"Ruinas de uma cidade" // i added de uma wich means 'of a' because otherwise it would not make sense
+	}
 	
 	// Great Unit improvements
 	"Academy":{
@@ -1896,7 +1912,7 @@
 		German:"Bronze Bearbeitung"
 		Dutch:"Brons Bewerking"
 		Spanish:"Trabajo del bronce"
-		Portuguese:"Trabalha com Bronze"
+		Portuguese:"Fundição de Bronze"
 	}
 	
 	
@@ -1980,7 +1996,7 @@
 		German:"Eisen Bearbeitung"
 		Dutch:"Ijzer Bewerking"
 		Spanish:"Trabajo del hierro"
-		Portuguese:"Trabalho com ferro"
+		Portuguese:"Fundição de ferro"
 	}
 	
 	
@@ -2218,7 +2234,7 @@
 		Romanian:"Ghintuire"
 		Dutch:"Gedraaide loop"
 		Spanish:"Estriado"
-		// Portuguese translation not sure
+		Portuguese:"Estriamento"
 	}
 	"Military Science":{
 		Italian:"Scienza militare"
@@ -2294,7 +2310,7 @@
 		Portuguese:"Refrigeração"
 	}
 	"Replacable Parts":{
-		Portuguese:"Partes substituiveís"
+		Portuguese:"Partes substituíveís"
 	}
 	"Radio":{
 		Italian:"Radio"
@@ -2334,7 +2350,7 @@
 		German:"Elektronik"
 		Dutch:"Elektronica"
 		Spanish:"Electrónica"
-		Portuguese:"Eletronicos"
+		Portuguese:"Eletrônicos"
 	}
 	"Mass Media":{
 		Italian:"Mass media"
@@ -2814,14 +2830,16 @@
 	}
 	
 	"Create [improvementName]":{ // for unit action button - also used for "create fishing boats" and "create oil well"
+	Portuguese:"Criar [improvementName]"
 	}
-	
 	"Can start an 8-turn golden age":{
 		Italian:"Può avviare un'Età dell'Oro di 8 turni"
 		French:"Peut commencer un âge d'or de 8 tours"
 		Portuguese:"Pode criar uma Idade Dourada de 8 turnos"
 	}
-	"Start Golden Age":{} // for unit action button
+	"Start Golden Age":{
+	Portuguese:"Inicia Era Dourada"
+	} // for unit action button 
 	"Can build improvement: Landmark":{
 		Italian:"Può costruire il miglioramento: Punto di Riferimento"
 		French:"Peut construire l'amélioration suivante: Point de repère"
@@ -2832,7 +2850,9 @@
 		French:"Peut découvrir une technologie"
 		Portuguese:"Pode descobrir uma tecnologia"
 	}
-	"Discover Technology":{} // for unit action button
+	"Discover Technology":{
+	Portuguese:"Descobrir tecnologia"
+	} // for unit action button
 	"Can build improvement: Academy":{
 		Italian:"Può costruire il miglioramento: Accademia"
 		French:"Peut construire l'amélioration suivante: Académie"
@@ -2843,7 +2863,9 @@
 		French:"Peut entreprendre une mission commerciale qui donne une large somme en or"
 		Portuguese:"Pode entrar em uma missão comercial, dando grande quantidades de ouro"
 	}
-	"Conduct Trade Mission":{} // for unit action button
+	"Conduct Trade Mission":{
+	Portuguese:"Conduzir missão mercantil"
+	} // for unit action button
 	"Your trade mission has earned you [goldGained] gold!":{
 	Portuguese:"Sua missão comercial ganhou para voçê [goldGained] ouro!"
 	}
@@ -2857,7 +2879,9 @@
 		French:"Peut accélérer la construction d'une Merveille"
 		Portuguese:"Pode acelerar a construção de uma maravilha"
 	}
-	"Hurry Wonder":{} // for unit action button
+	"Hurry Wonder":{
+	Portuguese:"Acelerar Contrução de maravilha" //could you maybe modify that phrase to 'Hurry Wonder construction'? sounds wierd and makes it seems like wonder is a person.
+	} // for unit action button
 	"Can build improvement: Manufactory":{
 		Italian:"Può costruire il miglioramento: Manifattura"
 		French:"Peut construire l'amélioration suivante: Manufacture"
@@ -3026,8 +3050,9 @@
 	}
 
 
-	// Civilisations and uniques
+	// Civilizations and uniques
 	"replaces":{// As in "Camel Archer replaces Knight", "Krepost replaces Barracks"		
+	Portuguese:"Substitui"
 	}
 	
 	"Babylon":{	
@@ -3070,7 +3095,8 @@
 		Spanish:"Inglaterra"
 		Portuguese:"Inglaterra"
 	}
-	"+2 movement for all naval units":{}
+	"+2 movement for all naval units":{
+	Portuguese:"+2 movimento para todas as unidades navais"}
 	
 	"France":{	
 		Italian:"Francia"
@@ -3080,13 +3106,27 @@
 		Spanish:"Francia"
 		Portuguese:"França"
 	}
-	"Russia":{}
-	"Strategic Resources provide +1 Production, and Horses, Iron and Uranium Resources provide double quantity":{}
-	"Rome":{}
-	"Arabia":{}
-	"America":{}
-	"All land military units have +1 sight, 50% discount when purchasing tiles":{}
-	"Barbarians":{}
+	"Russia":{
+	Portuguese:"Russia"
+	}
+	"Strategic Resources provide +1 Production, and Horses, Iron and Uranium Resources provide double quantity":{
+	Portuguese:"Recursos provem +1 prodrução e cavalos,ferro e urânio provem o dobro"
+	}
+	"Rome":{
+	Portuguese:"Roma"
+	}
+	"Arabia":{
+	Portuguese:"Arábia"
+	}
+	"America":{
+	Portuguese:"América"
+	}
+	"All land military units have +1 sight, 50% discount when purchasing tiles":{
+	Portuguese:"Todas as unidades militares tem +1 de visão e 50% de desconto ao comprar terras"
+	}
+	"Barbarians":{
+	Portuguese:"Bárbaros"
+	}
 	
 
 	//Difficulty
@@ -3156,7 +3196,9 @@
 	}
 
 	//world size
-	"Tiny":{}
+	"Tiny":{
+	Portuguese:"Minúsculo"
+	}
 	"Small":{	
 		Italian:"Piccolo"
 		Russian:"Маленький"
@@ -3181,7 +3223,7 @@
 		Spanish:"Grande"
 		Portuguese:"Grande"
 	}
-
+	//Excuse me but i think you fogot the new "huge" map size and just in case you add it here te portuguese translation to huge is 'gigante"
 	// New game screen
 	
 	"Civilization":{	
@@ -3414,7 +3456,9 @@
 		Spanish:"Palacio"
 		Portuguese:"Palácio"
 	}
-	"Indicates the capital city":{}
+	"Indicates the capital city":{
+	Portuguese:"Indica a cidade capital"
+	}
 	
 	"Monument":{	
 		Italian:"Monumento"
@@ -3467,7 +3511,9 @@
 		Spanish:"+1 Ciencia cada 2 habitantes"
 		Portuguese:"+1 Ciência a cada 2 habitantes"
 	}
-	"Paper Maker":{}
+	"Paper Maker":{
+	Portuguese:"Fazedor de papel"
+	}
 	
 	"The Great Library":{	
 		Italian:"Grande Biblioteca"
@@ -3532,8 +3578,12 @@
 		Portuguese:"Quartéis"
 	}
 	
-	"Krepost":{} // russian uique, transliterate this probably, this is a russian word
-	"Culture and Gold costs of acquiring new tiles reduced by 25% in this city":{}
+	"Krepost":{
+	Portuguese:"Krespost"
+	} // russian uique, transliterate this probably, this is a russian word
+	"Culture and Gold costs of acquiring new tiles reduced by 25% in this city":{
+	Portuguese:"Custos de cultura e ouro ao comprar novos terrenos reduzido e 25% nessa cidade"
+	}
 	
 	"Temple":{	
 		Italian:"Tempio"
@@ -3543,7 +3593,9 @@
 		Spanish:"Templo"
 		Portuguese:"Templo"
 	}
-	"Burial Tomb":{}
+	"Burial Tomb":{
+	Portuguese:"Tumba"
+	}
 	
 	"The Oracle":{	
 		Italian:"Ooracolo"
@@ -3595,7 +3647,7 @@
 	"Lighthouse":{
 		Italian:"Faro"
 		French:"Phare"
-		Portuguese:"Farol" // farol also means that thing wich has a red ligh (i do not remember it's name) so if deemed nescessarry can add costeira to the beggining
+		Portuguese:"Farol Costeiro"
 	}
 	"Can only be built in coastal cities":{
 		Italian:"Disponibile solo nelle città costiere"
@@ -3620,7 +3672,7 @@
 		French:"Écurie"
 		Romanian:"Grajd"
 		Spanish:"Establos"
-		Portuguese:Estabulos
+		Portuguese:"Estabulos"
 	}
 	"Circus Maximus":{	
 		Italian:"Circo Maximus"
@@ -3655,9 +3707,15 @@
 		Portuguese:"Mercado"
 	}
 	
-	"Bazaar":{}// Arabian unique - transliterate?
-	"Provides 1 extra copy of each improved luxury resource near this City":{}
-	"+2 Gold for each source of Oil and oasis":{}
+	"Bazaar":{
+	Portuguese:"Bazaar"
+	}// Arabian unique - transliterate?
+	"Provides 1 extra copy of each improved luxury resource near this City":{
+	Portuguese:"Providencia 1 cópia extra de todos os recursos de luxo extraidos nessa cidade"
+	}
+	"+2 Gold for each source of Oil and oasis":{
+	Portuguese:"+2 ouro para cada recurso de óleo oasis
+	}
 			
 	"Monastery":{	
 		Italian:"Monastero"
@@ -3938,7 +3996,7 @@
 		French:"Taj Mahal"
 		Romanian:"Taj Mahal"
 		Spanish:"Taj Mahal"
-		Portuguese:"Taj Mahal" // somethimes h has no sound in the portuguese language (brazilian variation [altough i am not sure about other variations]) and others it has the sound of h (weak sound)
+		Portuguese:"Taj Mahal" // somethimes h has no sound in the portuguese language (brazilian variation [altough i am not sure about other variations]) and others it has the sound of r (weak sound)
 				       // so that is why i would double check it later to see if Taj Mahal is correctly written in portuguese
 	}
 	"Empire enters golden age":{
@@ -4252,7 +4310,7 @@
 	}
 	
 	
-	// And finally, units!
+	// And finally, units! ALELUJAH!
 	
 	// Ancient Era Units
 	"Worker":{	
@@ -4261,7 +4319,7 @@
 		French:"Travailleur"
 		Romanian:"Lucrător"
 		Spanish:"Trabajador"
-		Portuguese:"Assalariado" // may change to trabalhador (assalariado means wage earner wich in portuguese has the same meaning of worker it is just another way to put it
+		Portuguese:"Assalariado" // may change to trabalhador (assalariado means wage earner wich in portuguese has the same meaning of worker it is just another way to put it)
 	}
 	// Settler already translated in difficulties
 	"Scout":{	
@@ -4315,7 +4373,9 @@
 		Spanish:"Arquero en carro"
 		Portuguese:"Arqueiro de Biga"
 	}
-	"War Chariot":{} // Egypt unique
+	"War Chariot":{
+	Portuguese:"Biga de Guerra"
+	} // Egypt unique
 	"Spearman":{	
 		Italian:"Lanciere"
 		Russian:"Копейщик"
@@ -4324,10 +4384,14 @@
 		Spanish:"Lancero"
 		Portuguese:"Lanceiro"
 	}
-	"Hoplite":{}// Greek unique
+	"Hoplite":{
+	Portuguese:"Hoplita"
+	}// Greek unique
 	
 	// Classical Era Units
-	"Composite Bowman":{}
+	"Composite Bowman":{
+	Portuguese:"Arqueiro com arco composto"
+	}
 	"Catapult":{	
 		Italian:"Catapulta"
 		Russian:"Катапульта"
@@ -4349,7 +4413,9 @@
 		Spanish:"Espadachín"
 		Portuguese:"Espadachin" // may replace with guerreiro com espada if nescessary
 	}
-	"Legion":{} // Rome unique
+	"Legion":{
+	Portuguese:"Legião"
+	} // Rome unique
 	"Horseman":{	
 		Italian:"Cavaliere"
 		Russian:"Всадник"
@@ -4388,7 +4454,9 @@
 		Spanish:"Arquero de arco largo"
 		Portuguese:"Arqueiro de arco longo"
 	}
-	"Chu-ko-nu":{} // Chinese unique, can transliterate
+	"Chu-ko-nu":{//You sure its writen this way? going to put like that since its what translate google says... dont know if its right
+	Portuguese:"Chuu-ku"
+	} // Chinese unique, can transliterate
 	
 	"Trebuchet":{	
 		Italian:"Trebuchet"
@@ -4421,7 +4489,8 @@
 		Spanish:"Caballero"
 		Portuguese:"Cavaleiro"
 	}
-	"Camel Archer":{}
+	"Camel Archer":{
+	Portuguese:"Arqueiro a camelo"}
 	
 	// Renaissance units
 	"Caravel":{
@@ -4448,13 +4517,17 @@
 		French:"Mousquetaire"
 		Portuguese:"Mosqueteiro"
 	}
-	"Minuteman":{} // American unique
+	"Minuteman":{
+	Portuguese:"Minutemen"
+	} // American unique
 	"Frigate":{
 		Italian:"Fregata"
 		French:"Frégate"
 		Portuguese:"Fragata"
 	}
-	"Ship of the Line":{} // English unique
+	"Ship of the Line":{
+	Portuguese:"Návio da linha"
+	} // English unique
 	"Lancer":{	
 		Italian:"Lanciere a cavallo"
 		Russian:"Улан"
@@ -4466,7 +4539,9 @@
 	
 	// Industrial units
 	
-	"Gatling Gun":{}
+	"Gatling Gun":{
+	Portuguese:"Metralhadora Gatling"
+	}
 	"Rifleman":{	
 		Italian:"Fuciliere"
 		Russian:"Стрелок"
@@ -4483,7 +4558,9 @@
 		Spanish:"Cavallería"
 		Portuguese:"Cavalaria"
 	}
-	"Cossack":{} // Russia unique
+	"Cossack":{
+	Portuguese:"Cóssacos"
+	} // Russia unique // you sure they're not ukrainian IRL??
 	"Artillery":{	
 		Italian:"Artiglieria"
 		Russian:"Артиллерия"
@@ -4495,37 +4572,83 @@
 	"Ironclad":{
 		Italian:"Ironclad"
 		French:"Cuirassé"
-		// iron clad has 3 different tranlations to portuguese but i am not sure wich one to use
+		Portuguese:"Navio armado"
 	}
 	
-	// Modern units (do these, yes)
-	"Landship":{}
-	"Great War Infantry":{}
-	"Destroyer":{}
-	"Machine Gun":{}
-	"Anti-aircraft Gun":{}
-	"Infantry":{}
-	"Foreign Legion":{} // French Unique
-	"Battleship":{}
-	"Submarine":{}
-	"Carrier":{} // aircrat carrier
-	"Great War Bomber":{}
-	"Triplane":{}
+	// Modern units (do these, yes) ooook.
+	"Landship":{
+	Portuguese:"Tanque"
+	}
+	"Great War Infantry":{
+	Portuguese:"Infantaria da primeira guerra"
+	}
+	"Destroyer":{
+	Portuguese:"Destruidor"
+	}
+	"Machine Gun":{//cant wait to see one of these wreck the americans >:D
+	Portuguese:"Metralhadora"
+	}
+	"Anti-aircraft Gun":{
+	Portuguese:"Artilharia anti-aérea"
+	}
+	"Infantry":{
+	Portuguese:"Infantaria"
+	}
+	"Foreign Legion":{//french unique
+	Portuguese:"Legião Estrangeira"
+	}
+	"Battleship":{
+	Portuguese:"Návio de batalha"
+	}
+	"Submarine":{
+	Portuguese:"Submarino"
+	}
+	"Carrier":{//aircraft carrier (sorry but i really had to delete that as it was breaking the pattern and i have OCD)
+	Portuguese:"Porta-aviões"
+	} 
+	"Great War Bomber":{
+	Portuguese:"Bombardeiro da Grande Guerra"
+	}
+	"Triplane":{
+	Portuguese:"Tri-plano"
+	}
 	
 	// Atomic units (not in game yet but will be, not super important but why not)
-	"Rocket Artillery":{}
-	"Anti-tank Gun":{}
-	"Marine":{}
-	"Mobile SAM":{}
-	"Paratrooper":{}
-	"Tank":{}
-	"Panzer":{} // german unique
-	"Bomber":{}
-	"B17":{} // american unique
-	"Fighter":{}
-	"Helicopter Gunship":{}
+	"Rocket Artillery":{
+	Portuguese:"Artilharia de Foguetes"
+	}
+	"Anti-tank Gun":{
+	Portuguese:"Artilharia anti-tanque"
+	}
+	"Marine":{
+	Portuguese:"Marinheiro"
+	}
+	"Mobile SAM":{
+	Portuguese:"MTA móvel" //MTA= Míssel terra-ar wich in turn = Surface-to-air missile
+	}
+	"Paratrooper":{
+	Portuguese:"Paraquedista"
+	}
+	"Tank":{
+	Portuguese:"Tanque"
+	}
+	"Panzer":{
+	Portuguese:"Panzer/tanque"
+	} // german unique
+	"Bomber":{
+	Portuguese:"Bombardeiro"
+	}
+	"B17":{
+	Portuguese:"B17"
+	} // american unique //srsly? cmon it would be the same in nearly every langua except slav(all slav languages) and maybe german
+	"Fighter":{
+	Portuguese:"Caça"
+	}
+	"Helicopter Gunship":{
+	Portuguese:"Helicoptero de assalto"
+	}
 	
-	// Information era - not even putting here, too far off
+	// Information era - not even putting here, too far off //a few ideas for em': jets,seals (if you're goin' add brazil then maybe C.I.G.S [brazilian forest guards bassicly], etc)
 	
 	// Great units
 	"Great Artist":{	
